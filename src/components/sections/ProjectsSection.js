@@ -18,7 +18,7 @@ const StyledProjectsWrapper = styled.div`
 `;
 
 const ProjectsSection = () => (
-  <StyledWrapper>
+  <StyledWrapper id="Projects">
     <Heading invert="true">Moje Projekty</Heading>
     <StyledProjectsWrapper>
       {data.map(function(props) {

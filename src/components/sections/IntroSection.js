@@ -1,5 +1,5 @@
 import Button from 'components/common/Button/Button';
-import Fade from 'react-reveal/Fade';
+import { Link } from 'react-scroll';
 import MaciejDzik from 'assets/main.jpg';
 import React from 'react';
 import { media } from 'utils';
@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const StyledWrapper = styled.div`
   color: white;
   width: 100%;
-  padding: 3vw 0 5vw;
+  padding: 0 0 5vw;
 `;
 
 const StyledInnerWrapper = styled.div`
@@ -43,6 +43,7 @@ const StyledMainDescription = styled.h1`
   font-size: 2.3rem;
   line-height: 1.3;
   font-weight: 500;
+  width: 90%;
 
   ${media.tablet`
     font-size: 4rem;
@@ -76,9 +77,6 @@ const StyledText = styled.div`
   ${media.tablet`
     width: 49%;
   `};
-
-  ${media.desktop`
-  `};
 `;
 
 const IntroSection = () => (
@@ -93,7 +91,9 @@ const IntroSection = () => (
         </StyledMainDescription>
         <StyledParagraph>Check out my latest projects.</StyledParagraph>
         <StyledButtonWrapper>
-          <Button as="a">Check Now</Button>
+          <Button as={Link} smooth={true} duration={1000} to="Projects">
+            Check Now
+          </Button>
         </StyledButtonWrapper>
       </StyledText>
     </StyledInnerWrapper>

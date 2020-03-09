@@ -5,7 +5,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
-  background-color: white;
   min-height: 160px;
   display: flex;
   flex-direction: column;
@@ -13,7 +12,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledInnerWrapper = styled.div`
-  color: black;
+  color: white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,13 +20,13 @@ const StyledInnerWrapper = styled.div`
 `;
 
 const StyledParagraph = styled.p`
-  color: #38383b;
+  color: white;
   margin: 7px auto;
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 20px;
-  color: #38383b;
+  color: white;
   margin: 3px;
 `;
 

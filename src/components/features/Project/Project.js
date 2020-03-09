@@ -6,7 +6,9 @@ import styled from 'styled-components';
 
 const StyledProjectWrapper = styled.div`
   padding: 5vw 3vw;
+  height: 600px;
   margin: 30px 0;
+  position: relative;
 
   ${media.tablet`
     width: 80%;
@@ -53,24 +55,27 @@ const StyledButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
 `;
 
 const Project = ({ id, img, name, desc, code, demo, tech }) => (
   <StyledProjectWrapper>
-    
+    <Fade>
       <StyledImage src={img} />
       <StyledProjectTitle>{name}</StyledProjectTitle>
       <StyledProjectDescription>{desc}</StyledProjectDescription>
       <StyledTechDescription>{tech}</StyledTechDescription>
-      <StyledButtonWrapper>
-        <Button as="a" target="_blank" rel="noopener noreferrer" href={demo}>
-          DEMO
-        </Button>
-        <Button as="a" target="_blank" rel="noopener noreferrer" href={code}>
-          KOD
-        </Button>
-      </StyledButtonWrapper>
     </Fade>
+
+    <StyledButtonWrapper>
+      <Button as="a" target="_blank" rel="noopener noreferrer" href={demo}>
+        DEMO
+      </Button>
+      <Button as="a" target="_blank" rel="noopener noreferrer" href={code}>
+        KOD
+      </Button>
+    </StyledButtonWrapper>
   </StyledProjectWrapper>
 );
 

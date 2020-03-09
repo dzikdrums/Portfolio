@@ -28,7 +28,7 @@ import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  padding: 10vw 0;
+  padding: 7vw 0;
 `;
 
 const StyledSkillsWrapper = styled.div`
@@ -82,7 +82,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const SkillsSection = () => (
-  <StyledWrapper>
+  <StyledWrapper id="Skills">
     <Heading invert="true">Umiejętności</Heading>
     <Fade right>
       <StyledHeading invert="true">Front-end</StyledHeading>
