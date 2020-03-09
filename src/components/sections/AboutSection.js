@@ -24,12 +24,6 @@ const StyledHeading = styled(Heading)`
   `}
 `;
 
-window.scrollBy({
-  top: 100, // could be negative value
-  left: 0,
-  behavior: 'smooth',
-});
-
 const AboutSection = () => (
   <StyledWrapper>
     <Fade duration={2000}>

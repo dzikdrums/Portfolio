@@ -55,9 +55,9 @@ const StyledButtonWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Project = ({ img, name, desc, code, demo, tech }) => (
+const Project = ({ id, img, name, desc, code, demo, tech }) => (
   <StyledProjectWrapper>
-    <Fade>
+    
       <StyledImage src={img} />
       <StyledProjectTitle>{name}</StyledProjectTitle>
       <StyledProjectDescription>{desc}</StyledProjectDescription>
