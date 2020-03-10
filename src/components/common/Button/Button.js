@@ -11,7 +11,6 @@ const Button = styled.button`
   border: none;
   color: white;
   min-width: 140px;
-  height: 52px;
   font-size: 16px;
   text-align: center;
 `;

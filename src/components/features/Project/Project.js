@@ -5,10 +5,8 @@ import { media } from 'utils';
 import styled from 'styled-components';
 
 const StyledProjectWrapper = styled.div`
-  padding: 5vw 3vw;
-  height: 600px;
+  padding: 3vw 1vw;
   margin: 30px 0;
-  position: relative;
 
   ${media.tablet`
     width: 80%;
@@ -17,6 +15,7 @@ const StyledProjectWrapper = styled.div`
 
   ${media.desktop`
     width: 49%;
+    height: 700px;
   `}
 `;
 
@@ -50,13 +49,11 @@ const StyledTechDescription = styled.p`
 const StyledButtonWrapper = styled.div`
   padding: 5vw 0;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 320px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
 `;
 
 const Project = ({ id, img, name, desc, code, demo, tech }) => (

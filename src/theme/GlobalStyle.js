@@ -1,4 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+
+import { media } from 'utils';
 
 const GlobalStyle = createGlobalStyle`
   
@@ -39,15 +41,24 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     line-height: 1;
     color: white;
-    background: white;
     margin: 0;
     font-size: 14px;
-    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-family: Montserrat, sans-serif;
     background-color: #38383b;
     font-weight: 300;
     font-style: normal;
     letter-spacing: .02em;
     text-transform: none;
+
+    ${({ overflow }) =>
+      overflow &&
+      css`
+        overflow: hidden;
+
+        ${media.tablet`
+          overflow: auto;
+        `}
+      `};
   }
 `;
 

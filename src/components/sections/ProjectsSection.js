@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  padding: 50px 6vw;
+  padding: 50px 10vw;
 `;
 
 const StyledProjectsWrapper = styled.div`

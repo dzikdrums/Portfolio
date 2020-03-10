@@ -28,8 +28,7 @@ const AboutSection = () => (
   <StyledWrapper id="Intro">
     <Fade duration={2000}>
       <StyledHeading>
-        Cześć, <br />
-        nazywam się Maciej Dzik i 1,5 roku temu postanowiłem zostać Front-end Developerem.
+        Cześć, nazywam się Maciej Dzik i 1,5 roku temu postanowiłem zostać Front-end Developerem.
       </StyledHeading>
       <Paragraph>
         Pomysł wziął się stąd ze w końcu uległem namowom kolegów ze programowanie jest jak układanie

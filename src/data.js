@@ -6,7 +6,8 @@ export const data = [
     code: 'https://github.com/dzikdrums/portfolio',
     demo: 'https://portfolio.netlify.com',
     desc: 'Strona portfolio napisana w React',
-    tech: 'Tech stack: React (Router) | Styled Components | CRA - webpack, npm',
+    tech:
+      'Tech stack: React | Styled Components | React-scroll | React-reveal | FontAwesome | CRA - webpack, npm',
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ export const data = [
     demo: 'https://drumstore.netlify.com',
     desc: 'Tablica ogłoszeń zbudowana w stacku MERN. ',
     tech:
-      'Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Styled Components | CRA - webpack | npm ',
+      'Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Styled Components | npm ',
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ export const data = [
     code: 'https://github.com/dzikdrums/solo-project',
     demo: 'https://hopeful-goldberg-591761.netlify.com',
     desc: 'Projekt napisany na podstawie pliku PSD od grafika.',
-    tech: 'Tech stack: HTML | Sass | RWD | JavaScript ES5 | Photoshop | npm Scripts.',
+    tech: 'Tech stack: HTML | Sass | RWD | JavaScript ES6 | Photoshop | npm Scripts.',
   },
   {
     id: 5,

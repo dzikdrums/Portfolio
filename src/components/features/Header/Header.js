@@ -1,3 +1,4 @@
+import Hamburger from 'components/common/Hamburger/Hamburger';
 import { Link } from 'react-scroll';
 import React from 'react';
 import { media } from 'utils';
@@ -20,7 +21,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 `;
 
 const StyledTitle = styled.h1`
@@ -37,11 +38,11 @@ const StyledTitle = styled.h1`
 `;
 
 const StyledNav = styled.nav`
-  transition: display 1s ease-in-out;
-  display: none;
   cursor: pointer;
+  display: none;
+  transition: display 1s ease-in-out;
 
-  ${media.desktop`
+  ${media.tablet`
     display: inline;
   `};
 `;
@@ -52,12 +53,19 @@ const StyledLink = styled(Link)`
   margin: 0 10px;
 `;
 
-const Header = () => (
+const StyledBurgerWrapper = styled.div`
+  opacity: 1;
+
+  ${media.tablet`
+    opacity: 0;
+  `}
+`;
+
+const Header = ({ isMenuOpen, toggleMenu }) => (
   <StyledWrapper>
     <StyledHeader>
       <StyledTitle>Maciej Dzik</StyledTitle>
       <StyledNav>
-        <ul></ul>
         <StyledLink to="Intro" smooth={true} duration={1000}>
           Intro
         </StyledLink>
@@ -74,6 +82,9 @@ const Header = () => (
           Kontakt
         </StyledLink>
       </StyledNav>
+      <StyledBurgerWrapper onClick={() => toggleMenu()}>
+        <Hamburger active={isMenuOpen} />
+      </StyledBurgerWrapper>
     </StyledHeader>
   </StyledWrapper>
 );
