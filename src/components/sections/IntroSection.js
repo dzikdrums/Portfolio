@@ -90,9 +90,7 @@ const IntroSection = () => (
         <StyledImage src={MaciejDzik} />
       </StyledImageWrapper>
       <StyledText>
-        <StyledMainDescription>
-          I&apos;am a front-end developer wannabe from Kraków
-        </StyledMainDescription>
+        <StyledMainDescription>Jestem front-end developerem z Krakowa</StyledMainDescription>
         <StyledParagraph>Sprawdź moje ostatnie projekty</StyledParagraph>
         <StyledButtonWrapper>
           <Button as={Link} smooth duration={1000} to="Projects">

@@ -24,7 +24,7 @@ export const data = [
     img: '../../../images/projects-2.jpg',
     name: 'Tablica ogłoszeń',
     code: 'https://github.com/dzikdrums/MernApp',
-    demo: 'https://drumstore.netlify.com',
+    demo: 'https://bulletinboard.netlify.com/',
     desc: 'Tablica ogłoszeń zbudowana w stacku MERN. ',
     tech:
       'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Styled Components | npm ',
@@ -34,7 +34,7 @@ export const data = [
     img: '../../../images/projects-3.jpg',
     name: 'Panel Administracyjny',
     code: 'https://github.com/dzikdrums/solo-project',
-    demo: 'https://hopeful-goldberg-591761.netlify.com',
+    demo: 'https://adminpaneldzik.netlify.com',
     desc: 'Projekt napisany na podstawie pliku PSD od grafika.',
     tech: 'Tech stack: HTML | Sass | RWD | JavaScript ES6 | Photoshop | npm Scripts.',
   },
@@ -42,8 +42,8 @@ export const data = [
     id: 5,
     img: '../../../images/projects-4.jpg',
     name: 'New Wave Festival Page',
-    code: 'https://github.com/dzikdrums/RestApiClient',
-    demo: 'https://herorero.herokuapp.com',
+    code: 'https://github.com/dzikdrums/RestApiHackers',
+    demo: 'newwavefestival.netlify.com',
     desc: 'Strona festiwalu NEW WAVE, projekt do wykonania w trakcie Bootcampu',
     tech:
       'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Sass | CRA - webpack | npm ',

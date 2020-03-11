@@ -67,7 +67,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
         <StyledNav>
           <StyledLink
             onClick={() => toggleMenu()}
-            active={isMenuOpen}
+            active={isMenuOpen || undefined}
             to="Intro"
             smooth
             duration={1000}
@@ -76,7 +76,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
           </StyledLink>
           <StyledLink
             onClick={() => toggleMenu()}
-            active={isMenuOpen}
+            active={isMenuOpen || undefined}
             to="Projects"
             smooth
             duration={1000}
@@ -85,7 +85,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
           </StyledLink>
           <StyledLink
             onClick={() => toggleMenu()}
-            active={isMenuOpen}
+            active={isMenuOpen || undefined}
             to="About"
             smooth
             duration={1000}
@@ -94,7 +94,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
           </StyledLink>
           <StyledLink
             onClick={() => toggleMenu()}
-            active={isMenuOpen}
+            active={isMenuOpen || undefined}
             to="Skills"
             smooth
             duration={1000}
@@ -103,7 +103,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
           </StyledLink>
           <StyledLink
             onClick={() => toggleMenu()}
-            active={isMenuOpen}
+            active={isMenuOpen || undefined}
             to="Contact"
             smooth
             duration={1000}

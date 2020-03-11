@@ -8,7 +8,7 @@ import React from 'react';
 
 const Root = () => (
   <BrowserRouter>
-    <MainLayout>
+    <MainLayout data-testid="hehe">
       <Switch>
         <Route exact path="/" component={HomePage} />
       </Switch>

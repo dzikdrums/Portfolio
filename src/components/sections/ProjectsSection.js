@@ -30,7 +30,7 @@ const ProjectsSection = () => (
 );
 
 ProjectsSection.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 };
 
 export default ProjectsSection;
