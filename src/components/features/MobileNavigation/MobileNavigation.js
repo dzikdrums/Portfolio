@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { Link } from 'react-scroll';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { media } from 'utils';
 
@@ -9,7 +10,7 @@ const StyledWrapper = styled.div`
   opacity: 0;
   z-index: 9999;
   position: fixed;
-  top: 100px;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -44,7 +45,7 @@ const StyledNav = styled.nav`
 `;
 
 const StyledLink = styled(Link)`
-  font-size: 6vmin;
+  font-size: 7vmin;
   line-height: 1.8em;
   opacity: 0;
   display: block;
@@ -68,7 +69,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
             onClick={() => toggleMenu()}
             active={isMenuOpen}
             to="Intro"
-            smooth={true}
+            smooth
             duration={1000}
           >
             Intro
@@ -77,7 +78,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
             onClick={() => toggleMenu()}
             active={isMenuOpen}
             to="Projects"
-            smooth={true}
+            smooth
             duration={1000}
           >
             Projekty
@@ -86,7 +87,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
             onClick={() => toggleMenu()}
             active={isMenuOpen}
             to="About"
-            smooth={true}
+            smooth
             duration={1000}
           >
             O mnie
@@ -95,7 +96,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
             onClick={() => toggleMenu()}
             active={isMenuOpen}
             to="Skills"
-            smooth={true}
+            smooth
             duration={1000}
           >
             Umiejętności
@@ -104,7 +105,7 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
             onClick={() => toggleMenu()}
             active={isMenuOpen}
             to="Contact"
-            smooth={true}
+            smooth
             duration={1000}
           >
             Kontakt
@@ -113,6 +114,11 @@ const MobileNavigation = ({ isMenuOpen, toggleMenu }) => {
       </StyledInnerWrapper>
     </StyledWrapper>
   );
+};
+
+MobileNavigation.propTypes = {
+  isMenuOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
 };
 
 export default MobileNavigation;

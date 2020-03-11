@@ -84,8 +84,8 @@ const StyledHeading = styled(Heading)`
 const SkillsSection = () => (
   <StyledWrapper id="Skills">
     <Heading invert="true">Umiejętności</Heading>
+    <StyledHeading invert="true">Front-end</StyledHeading>
     <Fade right>
-      <StyledHeading invert="true">Front-end</StyledHeading>
       <StyledSkillsWrapper>
         <StyledSkillWrapper>
           <StyledFontAwesomeIcon icon={faHtml5} />
@@ -113,8 +113,8 @@ const SkillsSection = () => (
         </StyledSkillWrapper>
       </StyledSkillsWrapper>
     </Fade>
+    <StyledHeading invert="true">Back-end</StyledHeading>
     <Fade left>
-      <StyledHeading invert="true">Back-end</StyledHeading>
       <StyledSkillsWrapper>
         <StyledSkillWrapper>
           <StyledFontAwesomeIcon icon={faNode} />
@@ -130,8 +130,8 @@ const SkillsSection = () => (
         </StyledSkillWrapper>
       </StyledSkillsWrapper>
     </Fade>
+    <StyledHeading invert="true">Narzędzia</StyledHeading>
     <Fade right>
-      <StyledHeading invert="true">Narzędzia</StyledHeading>
       <StyledSkillsWrapper>
         <StyledSkillWrapper>
           <StyledFontAwesomeIcon icon={faGitAlt} />
@@ -159,8 +159,8 @@ const SkillsSection = () => (
         </StyledSkillWrapper>
       </StyledSkillsWrapper>
     </Fade>
+    <StyledHeading invert="true">Aktualnie uczę się</StyledHeading>
     <Fade left>
-      <StyledHeading invert="true">Aktualnie uczę się</StyledHeading>
       <StyledSkillsWrapper>
         <StyledSkillWrapper>
           <StyledFontAwesomeIcon icon={faReacteurope} />

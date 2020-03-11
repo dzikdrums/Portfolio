@@ -7,7 +7,7 @@ export const data = [
     demo: 'https://portfolio.netlify.com',
     desc: 'Strona portfolio napisana w React',
     tech:
-      'Tech stack: React | Styled Components | React-scroll | React-reveal | FontAwesome | CRA - webpack, npm',
+      'Tech stack: React | Styled Components | React-scroll | React-reveal | FontAwesome | CRA - webpack | npm',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const data = [
     demo: 'https://drumstore.netlify.com',
     desc: 'Strona sklepu internetowego Drumstore',
     tech:
-      'Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Sass | CRA - webpack | npm ',
+      'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Sass | CRA - webpack | npm ',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const data = [
     demo: 'https://drumstore.netlify.com',
     desc: 'Tablica ogłoszeń zbudowana w stacku MERN. ',
     tech:
-      'Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Styled Components | npm ',
+      'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Styled Components | npm ',
   },
   {
     id: 4,
@@ -46,6 +46,6 @@ export const data = [
     demo: 'https://herorero.herokuapp.com',
     desc: 'Strona festiwalu NEW WAVE, projekt do wykonania w trakcie Bootcampu',
     tech:
-      'Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Sass | CRA - webpack | npm ',
+      'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Sass | CRA - webpack | npm ',
   },
 ];

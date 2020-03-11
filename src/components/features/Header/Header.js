@@ -1,14 +1,16 @@
 import Hamburger from 'components/common/Hamburger/Hamburger';
 import { Link } from 'react-scroll';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { media } from 'utils';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
   padding: 6vw;
+  position: relative;
 
   ${media.tablet`
-    padding: 6vw 6vw 3vw;
+    padding: 6vw 3vw 3vw;
   `};
 
   ${media.desktop`
@@ -55,6 +57,8 @@ const StyledLink = styled(Link)`
 
 const StyledBurgerWrapper = styled.div`
   opacity: 1;
+  position: absolute;
+  right: 30px;
 
   ${media.tablet`
     opacity: 0;
@@ -66,19 +70,19 @@ const Header = ({ isMenuOpen, toggleMenu }) => (
     <StyledHeader>
       <StyledTitle>Maciej Dzik</StyledTitle>
       <StyledNav>
-        <StyledLink to="Intro" smooth={true} duration={1000}>
+        <StyledLink to="Intro" smooth duration={1000}>
           Intro
         </StyledLink>
-        <StyledLink to="Projects" smooth={true} duration={1000}>
+        <StyledLink to="Projects" smooth duration={1000}>
           Projekty
         </StyledLink>
-        <StyledLink to="About" smooth={true} duration={1000}>
+        <StyledLink to="About" smooth duration={1000}>
           O mnie
         </StyledLink>
-        <StyledLink to="Skills" smooth={true} duration={1000}>
+        <StyledLink to="Skills" smooth duration={1000}>
           Umiejętności
         </StyledLink>
-        <StyledLink to="Contact" smooth={true} duration={1000}>
+        <StyledLink to="Contact" smooth duration={1000}>
           Kontakt
         </StyledLink>
       </StyledNav>
@@ -88,5 +92,10 @@ const Header = ({ isMenuOpen, toggleMenu }) => (
     </StyledHeader>
   </StyledWrapper>
 );
+
+Header.propTypes = {
+  isMenuOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
+};
 
 export default Header;

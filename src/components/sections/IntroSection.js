@@ -46,6 +46,10 @@ const StyledMainDescription = styled.h1`
   width: 90%;
 
   ${media.tablet`
+    font-size: 3rem;
+  `};
+
+  ${media.desktop`
     font-size: 4rem;
   `};
 `;
@@ -87,12 +91,12 @@ const IntroSection = () => (
       </StyledImageWrapper>
       <StyledText>
         <StyledMainDescription>
-          I'am a front-end developer wannabe from Kraków.
+          I&apos;am a front-end developer wannabe from Kraków
         </StyledMainDescription>
-        <StyledParagraph>Check out my latest projects.</StyledParagraph>
+        <StyledParagraph>Sprawdź moje ostatnie projekty</StyledParagraph>
         <StyledButtonWrapper>
-          <Button as={Link} smooth={true} duration={1000} to="Projects">
-            Check Now
+          <Button as={Link} smooth duration={1000} to="Projects">
+            Projekty
           </Button>
         </StyledButtonWrapper>
       </StyledText>

@@ -4,6 +4,7 @@ import Footer from 'components/features/Footer/Footer';
 import GlobalStyle from 'theme/GlobalStyle';
 import Header from 'components/features/Header/Header';
 import MobileNavigation from 'components/features/MobileNavigation/MobileNavigation';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
@@ -17,7 +18,6 @@ const MainLayout = ({ children }) => {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
   return (
     <>
@@ -30,6 +30,10 @@ const MainLayout = ({ children }) => {
       </StyledWrapper>
     </>
   );
+};
+
+MainLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default MainLayout;
