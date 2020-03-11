@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    img: '../../../images/projects-4.jpg',
+    img: '../../../images/projects-5.jpg',
     name: 'Portfolio Page',
     code: 'https://github.com/dzikdrums/portfolio',
     demo: 'https://portfolio.netlify.com',

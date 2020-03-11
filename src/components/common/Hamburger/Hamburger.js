@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const StyledButton = styled.button`
@@ -62,9 +63,13 @@ const StyledSpanInner = styled.div`
 const Hamburger = ({ active }) => {
   return (
     <StyledButton>
-      <StyledSpanInner active={active}></StyledSpanInner>
+      <StyledSpanInner active={active} />
     </StyledButton>
   );
+};
+
+Hamburger.propTypes = {
+  active: PropTypes.bool.isRequired,
 };
 
 export default Hamburger;

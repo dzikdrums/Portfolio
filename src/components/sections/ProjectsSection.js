@@ -1,5 +1,6 @@
 import Heading from 'components/common/Heading/Heading';
 import Project from 'components/features/Project/Project';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { data } from 'data';
 import styled from 'styled-components';
@@ -10,7 +11,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledProjectsWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,5 +28,9 @@ const ProjectsSection = () => (
     </StyledProjectsWrapper>
   </StyledWrapper>
 );
+
+ProjectsSection.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 
 export default ProjectsSection;

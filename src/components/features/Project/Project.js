@@ -1,12 +1,13 @@
 import Button from 'components/common/Button/Button';
 import { Fade } from 'react-reveal';
+import Proptypes from 'prop-types';
 import React from 'react';
 import { media } from 'utils';
 import styled from 'styled-components';
 
 const StyledProjectWrapper = styled.div`
   padding: 3vw 1vw;
-  margin: 30px 0;
+  margin: 30px auto;
 
   ${media.tablet`
     width: 80%;
@@ -56,7 +57,7 @@ const StyledButtonWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Project = ({ id, img, name, desc, code, demo, tech }) => (
+const Project = ({ img, name, desc, code, demo, tech }) => (
   <StyledProjectWrapper>
     <Fade>
       <StyledImage src={img} />
@@ -75,5 +76,14 @@ const Project = ({ id, img, name, desc, code, demo, tech }) => (
     </StyledButtonWrapper>
   </StyledProjectWrapper>
 );
+
+Project.propTypes = {
+  img: Proptypes.string.isRequired,
+  name: Proptypes.string.isRequired,
+  desc: Proptypes.string.isRequired,
+  tech: Proptypes.string.isRequired,
+  demo: Proptypes.string.isRequired,
+  code: Proptypes.string.isRequired,
+};
 
 export default Project;
