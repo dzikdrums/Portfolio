@@ -53,6 +53,12 @@ const StyledLink = styled(Link)`
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
+  transition: opacity 0.25s linear 0s;
+
+  :hover {
+    opacity: 0.5;
+  }
+
   ${({ active }) =>
     active &&
     css`

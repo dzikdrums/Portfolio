@@ -1,9 +1,8 @@
-import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-
 import { Fade } from 'react-reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Paragraph from 'components/common/Paragraph/Paragraph';
 import React from 'react';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { media } from 'utils';
 import styled from 'styled-components';
@@ -51,12 +50,12 @@ const ContactSection = () => (
   <StyledWrapper id="Contact">
     <Fade>
       <StyledIconWrapper>
-        <StyledContactWrapper>
+        {/* <StyledContactWrapper>
           <StyledLink target="_blank" rel="noopener noreferrer" href="/">
             <StyledFontAwesome icon={faFilePdf} />
             <Paragraph>Curriculum Vitae</Paragraph>
           </StyledLink>
-        </StyledContactWrapper>
+        </StyledContactWrapper> */}
         <StyledContactWrapper>
           <StyledLink
             target="_blank"

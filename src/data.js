@@ -2,9 +2,9 @@ export const data = [
   {
     id: 1,
     img: '../../../images/projects-5.jpg',
-    name: 'Portfolio Page',
+    name: 'Strona Portfolio',
     code: 'https://github.com/dzikdrums/portfolio',
-    demo: 'https://portfolio.netlify.com',
+    demo: 'https://maciejdzik.netlify.com',
     desc: 'Strona portfolio napisana w React',
     tech:
       'Tech stack: React | Styled Components | React-scroll | React-reveal | FontAwesome | CRA - webpack | npm',
@@ -12,7 +12,7 @@ export const data = [
   {
     id: 2,
     img: '../../../images/projects.jpg',
-    name: 'Drumstore shop',
+    name: 'DrumStore - sklep perkusyjny',
     code: 'https://github.com/dzikdrums/DrumStore',
     demo: 'https://drumstore.netlify.com',
     desc: 'Strona sklepu internetowego Drumstore',
@@ -41,9 +41,9 @@ export const data = [
   {
     id: 5,
     img: '../../../images/projects-4.jpg',
-    name: 'New Wave Festival Page',
+    name: 'New Wave - strona festiwalu',
     code: 'https://github.com/dzikdrums/RestApiHackers',
-    demo: 'newwavefestival.netlify.com',
+    demo: 'https://newwavefestival.netlify.com',
     desc: 'Strona festiwalu NEW WAVE, projekt do wykonania w trakcie Bootcampu',
     tech:
       'Tech stack: MERN - MongoDB | Express | React (Redux, Router) | Node.js | Sass | CRA - webpack | npm ',

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   display: inline-block;
-  background-color: #a8a6a1;
+  background-color: rgba(168, 166, 161, 0.8);
   line-height: normal;
   padding: 1.2em 2em;
   cursor: pointer;
@@ -13,6 +13,11 @@ const Button = styled.button`
   min-width: 140px;
   font-size: 16px;
   text-align: center;
+  transition: background-color 0.25s linear 0s;
+
+  :hover {
+    background-color: rgba(168, 166, 161, 0.4);
+  }
 `;
 
 export default Button;

@@ -93,7 +93,7 @@ const IntroSection = () => (
         <StyledMainDescription>Jestem front-end developerem z Krakowa</StyledMainDescription>
         <StyledParagraph>Sprawdź moje ostatnie projekty</StyledParagraph>
         <StyledButtonWrapper>
-          <Button as={Link} smooth duration={1000} to="Projects">
+          <Button className="projects" as={Link} smooth duration={1000} to="Projects">
             Projekty
           </Button>
         </StyledButtonWrapper>

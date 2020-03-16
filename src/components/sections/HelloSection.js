@@ -32,14 +32,17 @@ const AboutSection = () => (
       </StyledHeading>
       <Paragraph>
         Pod koniec 2018 roku w końcu uległem namowom kolegów, że programowanie jest jak układanie
-        puzzli i powinienem spróbować. <br /> Początkiem mojej przygody z programowaniem był 3
-        miesięczny kurs Pythona w szkole programowania Codecool który ukończyłem w kwietniu 2019
-        roku. W lipcu 2019 roku zacząłem systematyczną naukę po stronie front-endu. Ukończyłem
-        intensywny 9-miesięczny kurs programowania pod opieką indywidualnego mentora – Bootcamp Web
-        Developer Plus w Kodilla. Mam też za sobą kilka ciekawych kursów na platformie Eduweb,
-        Udemy, oraz niezlicznoną ilość godzin lektury Stack Overflow :). Cały czas ćwiczę i rozwijam
-        swoje umiejętności - szczególnie w JavaScript i React. Wiedzę mogę poprzeć licznymi
-        projektami. Aktualnie szukam pierwszej pracy w IT.
+        puzzli i powinienem spróbować.
+        <br />
+        <br />
+        Początkiem mojej przygody z programowaniem był 3 miesięczny kurs Pythona w szkole
+        programowania Codecool który ukończyłem w marcu 2019 roku. W lipcu 2019 roku zacząłem
+        systematyczną naukę po stronie front-endu. Ukończyłem intensywny 9-miesięczny kurs
+        programowania pod opieką indywidualnego mentora – Bootcamp Web Developer Plus w Kodilla. Mam
+        też za sobą kilka ciekawych kursów na platformie Eduweb, Udemy, oraz niezlicznoną ilość
+        godzin lektury Stack Overflow :). Cały czas ćwiczę i rozwijam swoje umiejętności -
+        szczególnie w JavaScript i React. Wiedzę mogę poprzeć licznymi projektami. Aktualnie szukam
+        pierwszej pracy w IT.
       </Paragraph>
     </Fade>
   </StyledWrapper>

@@ -16,8 +16,19 @@ const StyledProjectWrapper = styled.div`
 
   ${media.desktop`
     width: 49%;
-    height: 700px;
+    height: 600px;
   `}
+
+  &:hover {
+    .image {
+      opacity: 0.2;
+      filter: grayscale(0.8);
+    }
+
+    .button__wrapper {
+      opacity: 1;
+    }
+  }
 `;
 
 const StyledImage = styled.img`
@@ -25,6 +36,7 @@ const StyledImage = styled.img`
   width: 100%;
   height: auto;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 `;
 
 const StyledProjectTitle = styled.h4`
@@ -55,25 +67,39 @@ const StyledButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+`;
+
+const StyledImageWrapper = styled.div`
+  color: black;
+  position: relative;
 `;
 
 const Project = ({ img, name, desc, code, demo, tech }) => (
   <StyledProjectWrapper>
     <Fade>
-      <StyledImage src={img} />
+      <StyledImageWrapper>
+        <StyledImage className="image" src={img} />
+        <StyledButtonWrapper className="button__wrapper">
+          <Button as="a" target="_blank" rel="noopener noreferrer" href={demo}>
+            DEMO
+          </Button>
+          <Button as="a" target="_blank" rel="noopener noreferrer" href={code}>
+            KOD
+          </Button>
+        </StyledButtonWrapper>
+      </StyledImageWrapper>
       <StyledProjectTitle>{name}</StyledProjectTitle>
       <StyledProjectDescription>{desc}</StyledProjectDescription>
       <StyledTechDescription>{tech}</StyledTechDescription>
     </Fade>
-
-    <StyledButtonWrapper>
-      <Button as="a" target="_blank" rel="noopener noreferrer" href={demo}>
-        DEMO
-      </Button>
-      <Button as="a" target="_blank" rel="noopener noreferrer" href={code}>
-        KOD
-      </Button>
-    </StyledButtonWrapper>
   </StyledProjectWrapper>
 );
 

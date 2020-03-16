@@ -15,6 +15,7 @@ const StyledWrapper = styled.div`
 
   ${media.desktop`
     padding: 3vw 3vw 3vw;
+    width: 90%;
   `};
 `;
 
@@ -53,6 +54,11 @@ const StyledLink = styled(Link)`
   font-size: 1.1rem;
   line-height: 1.8em;
   margin: 0 10px;
+  transition: opacity 0.25s linear 0s;
+
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 const StyledBurgerWrapper = styled.div`
