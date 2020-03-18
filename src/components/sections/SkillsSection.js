@@ -29,6 +29,11 @@ import styled from 'styled-components';
 const StyledWrapper = styled.div`
   width: 100%;
   padding: 7vw 0;
+  margin: 0 auto;
+
+  ${media.desktop`
+    width: 80%;
+  `}
 `;
 
 const StyledSkillsWrapper = styled.div`
